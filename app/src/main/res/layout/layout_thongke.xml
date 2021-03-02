@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:text="Hôm nay"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/whiteColor"
+        android:textSize="30dp"
+        android:background="@color/blueColor"
+        android:textStyle="bold"
+        android:padding="6dp"
+        android:id="@+id/tvTitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkColor">
+
+        <TextView
+            android:id="@+id/textView2Tong"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Tổng"
+            android:textColor="@color/blackColor"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2TongTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Tổng tiền"
+            android:textAlignment="textEnd"
+            android:textColor="@color/blackColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:background="@drawable/button_color"
+            android:id="@+id/btchi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng chi"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            style="@style/button_text" />
+        <Button
+            android:background="@drawable/button_color"
+            android:id="@+id/btthu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng thu"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            style="@style/button_text" />
+</LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewhienthithongke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

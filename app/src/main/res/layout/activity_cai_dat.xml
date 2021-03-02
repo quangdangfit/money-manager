@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkColor"
+    tools:context="com.example.minh.moneymanager.CaiDatActivity"
+    android:weightSum="1">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnThu"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            android:background="@drawable/button_color"
+            android:text="Thu" />
+
+        <Button
+            android:id="@+id/btnChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            android:background="@drawable/button_color"
+            android:text="Chi" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/themthuchi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:padding="5sp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/edcaidat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3sp"
+            android:layout_weight="1.5"
+            android:hint="Thêm danh mục"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/spinthemthuchicaidat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1.8" >
+        </Spinner>
+
+        <ImageView
+            android:id="@+id/addcaidat"
+            android:src="@drawable/add"
+            android:layout_width="40dp"
+            android:paddingTop="7dp"
+            android:layout_height="40dp"
+            android:text="+"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewCaiDat"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_above="@+id/themthuchi"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_weight="0.53"
+        android:background="@color/whiteColor" />
+</RelativeLayout>
